@@ -282,9 +282,6 @@ def main():
         data.extend(zip(*quantit))  
         columns = list(head) + list(p_parties)
         df = pd.DataFrame(list(zip(*data)), columns=columns)   
-
-
-    
         df.to_csv(file_name, sep="|",index=False, encoding="utf-8", date_format=str)
         print("Ukončuji election scraper.")
 
